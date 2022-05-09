@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- sticky sidebar js -->
+		<script>
+			jQuery(window).on("load", function () {
+				setTimeout(function () {
+					var document_height = jQuery(window).height();
+					var pro_detail = jQuery(".summary-inner").outerHeight();
+					if (document_height < pro_detail) {
+						var hi_calculation = document_height - pro_detail;
+					}
+					jQuery(".summary-inner").css("top", hi_calculation - 30);
+				}, 2000);
+			});
+			jQuery(window).resize(function () {
+				setTimeout(function () {
+					var document_height = jQuery(window).height();
+					var pro_detail = jQuery(".summary-inner").outerHeight();
+					if (document_height < pro_detail) {
+						var hi_calculation = document_height - pro_detail;
+					}
+					jQuery(".summary-inner").css("top", hi_calculation - 30);
+				}, 2000);
+			});
+			jQuery(document).on("click", ".acc_trigger", function (e) {
+				setTimeout(function () {
+					var document_height = jQuery(window).height();
+					var pro_detail = jQuery(".summary-inner").outerHeight();
+					if (document_height < pro_detail) {
+						var hi_calculation = document_height - pro_detail;
+					}
+					jQuery(".summary-inner").css("top", hi_calculation - 30);
+				}, 2000);
+			});
+		</script>
+		<!-- sticky sidebar js -->
+	</body>
+</html>
