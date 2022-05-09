@@ -7,6 +7,182 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<!-- 😀 Css3 variable -->
+		<style>
+			:root {
+				--color1: #f1f1f1;
+				--color2: #f4f4f4;
+				--color3: #c0c0c0;
+				--font-family-termina: Termina;
+				--font-family-montserrat: Montserrat;
+				--text-transform-up: uppercase;
+				--common-font-desc: normal normal 400 15px/24px "Montserrat", sans-serif;
+			}
+		</style>
+		<!-- Css3 variable -->
+
+		<!-- 😀 scrollbar css -->
+		<style>
+			:root {
+				scrollbar-color: #ff7300 #000 !important;
+				scrollbar-width: thin !important;
+				scroll-snap-type: y;
+			}
+			::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				background-color: #222;
+				border-radius: 0px;
+			}
+			::-webkit-scrollbar {
+				width: 5px;
+				background-color: #ff7300;
+			}
+			::-webkit-scrollbar-thumb {
+				background-color: #ff7300;
+			}
+		</style>
+		<!-- scrollbar css -->
+
+		<!-- 😀 CSS-Grid-Layout https://codepen.io/lcolsant/pen/yLypWaB -->
+		<a href="https://codepen.io/lcolsant/pen/yLypWaB">Link</a>
+		<!-- CSS-Grid-Layout -->
+
+		<!-- 😀 Grid css & HTML -->
+		<section>
+			<ul class="grid-wrapper">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+				<li>item 5</li>
+				<li>item 6</li>
+				<li>item 7</li>
+				<li>item 8</li>
+				<li>item 9</li>
+				<li>item 10</li>
+				<li>item 11</li>
+				<li>item 12</li>
+			</ul>
+		</section>
+		<style>
+			.grid-wrappe {
+				display: grid;
+				grid-column-gap: 32px;
+				grid-row-gap: 32px;
+				grid-template-columns: repeat(6, minmax(auto, 1fr));
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+		</style>
+		<!-- Grid css & HTML-->
+
+		<!-- 😀 masonry layout css & HTML -->
+		<section>
+			<ul class="grid-wrapper">
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+				<li>item 5</li>
+				<li>item 6</li>
+				<li>item 7</li>
+				<li>item 8</li>
+				<li>item 9</li>
+				<li>item 10</li>
+				<li>item 11</li>
+				<li>item 12</li>
+			</ul>
+		</section>
+		<style>
+			.grid-wrapper {
+				-webkit-column-count: 4;
+				-moz-column-count: 4;
+				column-count: 4;
+				column-gap: 40px;
+			}
+			.grid-wrapper li {
+				padding: 0;
+				margin-bottom: 40px;
+				box-sizing: border-box;
+				-webkit-column-break-inside: avoid;
+				page-break-inside: avoid;
+				break-inside: avoid;
+				counter-increment: brick-counter;
+			}
+		</style>
+		<!-- masonry layout css & HTML -->
+
+		<!-- 😀Header sticky animation  -->
+		<style>
+			.site-header.sticky-header {
+				transition: all 1s;
+				position: fixed;
+				top: 0;
+				-webkit-animation: bar 1s ease;
+			}
+			@keyframes bar {
+				0% {
+					top: -100px;
+				}
+				100% {
+					top: 0%;
+				}
+			}
+		</style>
+		<!-- Header sticky animation  -->
+
+		<!-- 😀 Full screen & div container css -->
+		<style>
+			/* 1400px is your container size */
+			.ClassName {
+				padding-right: calc(calc(100% - 1400px) / 2);
+				padding-right: -webkit-calc(calc(100% - 1400px px) / 2);
+				padding-right: -moz-calc(calc(100% - 1400px) / 2);
+				padding-left: calc(calc(100% - 1400px) / 2);
+				padding-left: -webkit-calc(calc(100% - 1400px) / 2);
+				padding-left: -moz-calc(calc(100% - 1400px) / 2);
+			}
+		</style>
+		<!-- Full screen & div container css -->
+
+		<!-- 😀 Owl Carousel 2 Navigation on Sides - Left and Right https://codepen.io/ramsh/pen/xxbaRdQ -->
+		<a href="https://codepen.io/ramsh/pen/xxbaRdQ"></a>
+		<style>
+			.owl-prev,
+			.owl-next {
+				position: absolute;
+			}
+			.owl-prev {
+				left: -60px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 40px !important;
+				background-color: transparent !important;
+				outline: none !important;
+			}
+			.owl-next {
+				right: -60px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 40px !important;
+				background-color: transparent !important;
+				outline: none !important;
+			}
+		</style>
+		<!-- Owl Carousel 2 Navigation on Sides - Left and Right  -->
+
+		<!-- 😀 slider full width only one side container  -->
+		<style>
+			/* 1540px is your container width */
+			.ClassName {
+				padding-left: calc(calc(100% - 1540px) / 2);
+				padding-left: -webkit-calc(calc(100% - 1540px) / 2);
+				padding-left: -moz-calc(calc(100% - 1540px) / 2);
+			}
+		</style>
+		<!-- slider full width only one side container  -->
+
 		<!-- 😀 sticky sidebar js -->
 		<script>
 			jQuery(window).on("load", function () {
