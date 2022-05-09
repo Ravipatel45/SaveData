@@ -24,7 +24,7 @@
 			}
 		</style>
 		<!-- Css3 variable -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 scrollbar css -->
 		<style>
 			:root {
@@ -46,11 +46,11 @@
 			}
 		</style>
 		<!-- scrollbar css -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 CSS-Grid-Layout https://codepen.io/lcolsant/pen/yLypWaB -->
 		<a href="https://codepen.io/lcolsant/pen/yLypWaB">Link</a>
 		<!-- CSS-Grid-Layout -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Grid css & HTML -->
 		<section>
 			<ul class="grid-wrapper">
@@ -80,7 +80,7 @@
 			}
 		</style>
 		<!-- Grid css & HTML-->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 masonry layout css & HTML -->
 		<section>
 			<ul class="grid-wrapper">
@@ -116,7 +116,7 @@
 			}
 		</style>
 		<!-- masonry layout css & HTML -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀Header sticky animation  -->
 		<style>
 			.site-header.sticky-header {
@@ -135,7 +135,7 @@
 			}
 		</style>
 		<!-- Header sticky animation  -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Full screen & div container css -->
 		<style>
 			/* 1400px is your container size */
@@ -149,7 +149,7 @@
 			}
 		</style>
 		<!-- Full screen & div container css -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Owl Carousel 2 Navigation on Sides - Left and Right https://codepen.io/ramsh/pen/xxbaRdQ -->
 		<a href="https://codepen.io/ramsh/pen/xxbaRdQ"></a>
 		<style>
@@ -175,7 +175,7 @@
 			}
 		</style>
 		<!-- Owl Carousel 2 Navigation on Sides - Left and Right  -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 slider full width only one side container  -->
 		<style>
 			/* 1540px is your container width */
@@ -186,7 +186,7 @@
 			}
 		</style>
 		<!-- slider full width only one side container  -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Form select box css -->
 		<style>
 			select {
@@ -198,7 +198,7 @@
 			}
 		</style>
 		<!-- Form select box css -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 contact fomt g-recaptcha css -->
 		<style>
 			.wpcf7 .wpcf7-recaptcha iframe {
@@ -212,6 +212,65 @@
 		</style>
 		<!-- contact fomt g-recaptcha css -->
 
+		<!-- 😀 image hover animation -->
+		<style>
+			.overlay-plus {
+				position: relative;
+			}
+			.overlay-plus::before,
+			.overlay-plus::after {
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			.overlay-plus:not(:hover)::before {
+				width: 0;
+			}
+			.overlay-plus:not(:hover)::after {
+				height: 0;
+			}
+			.overlay-plus::before,
+			.overlay-plus::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				margin: auto;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+				z-index: 2;
+				background-color: rgb(193 193 193 / 13%);
+				pointer-events: none;
+			}
+		</style>
+		<!-- image hover animation -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
+		<!-- 😀 Form error msg design -->
+		<style>
+			label.error {
+				background-color: #dc3232;
+				padding: 1px 5px 3px;
+				font-size: 14px;
+				position: relative;
+			}
+			label.error:after {
+				content: "";
+				margin: 0 0.5em;
+				display: inline-block;
+				border: 7px solid transparent;
+				border-top: 8px solid #dc3232;
+				border-bottom: 0 none;
+				position: absolute;
+				left: 0;
+				top: -7px;
+				transform: rotate(180deg);
+			}
+		</style>
+		<!-- Form error msg design -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 sticky sidebar js -->
 		<script>
 			jQuery(window).on("load", function () {
@@ -246,7 +305,7 @@
 			});
 		</script>
 		<!-- sticky sidebar js -->
-
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Equal Height js -->
 		<script>
 			jQuery(document).ready(function () {
@@ -286,5 +345,6 @@
 			});
 		</script>
 		<!-- Equal Height js -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 	</body>
 </html>
