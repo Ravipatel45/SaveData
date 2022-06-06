@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
+
 	<body>
 		<!-- 😀 Css3 variable -->
 		<style>
@@ -18,6 +19,7 @@
 				--text-transform-up: uppercase;
 				--common-font-desc: normal normal 400 15px/24px "Montserrat", sans-serif;
 			}
+
 			.ClassName {
 				font: var(--common-font-desc);
 				color: var(--color1);
@@ -32,15 +34,18 @@
 				scrollbar-width: thin !important;
 				scroll-snap-type: y;
 			}
+
 			::-webkit-scrollbar-track {
 				-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 				background-color: #222;
 				border-radius: 0px;
 			}
+
 			::-webkit-scrollbar {
 				width: 5px;
 				background-color: #ff7300;
 			}
+
 			::-webkit-scrollbar-thumb {
 				background-color: #ff7300;
 			}
@@ -105,6 +110,7 @@
 				column-count: 4;
 				column-gap: 40px;
 			}
+
 			.grid-wrapper li {
 				padding: 0;
 				margin-bottom: 40px;
@@ -117,6 +123,125 @@
 		</style>
 		<!-- masonry layout css & HTML -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+		<!-- 😀 Custom Checkbox -->
+		<style>
+			.form-group {
+				display: block;
+				margin-bottom: 15px;
+			}
+
+			.form-group input {
+				padding: 0;
+				height: initial;
+				width: initial;
+				margin-bottom: 0;
+				display: none;
+				cursor: pointer;
+			}
+
+			.form-group label {
+				position: relative;
+				cursor: pointer;
+			}
+
+			.form-group label:before {
+				content: "";
+				-webkit-appearance: none;
+				background-color: transparent;
+				border: 2px solid #0079bf;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+					inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+				padding: 10px;
+				display: inline-block;
+				position: relative;
+				vertical-align: middle;
+				cursor: pointer;
+				margin-right: 5px;
+			}
+
+			.form-group input:checked + label:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 2px;
+				left: 9px;
+				width: 6px;
+				height: 14px;
+				border: solid #0079bf;
+				border-width: 0 2px 2px 0;
+				transform: rotate(45deg);
+			}
+		</style>
+		<!--  Custom Checkbox -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
+		<!--  😀Custom radio button -->
+		<form action="#">
+			<p>
+				<input type="radio" id="test1" name="radio-group" checked />
+				<label for="test1">Apple</label>
+			</p>
+			<p>
+				<input type="radio" id="test2" name="radio-group" />
+				<label for="test2">Peach</label>
+			</p>
+			<p>
+				<input type="radio" id="test3" name="radio-group" />
+				<label for="test3">Orange</label>
+			</p>
+		</form>
+		<style>
+			[type="radio"]:checked,
+			[type="radio"]:not(:checked) {
+				position: absolute;
+				left: -9999px;
+			}
+			[type="radio"]:checked + label,
+			[type="radio"]:not(:checked) + label {
+				position: relative;
+				padding-left: 28px;
+				cursor: pointer;
+				line-height: 20px;
+				display: inline-block;
+				color: #666;
+			}
+			[type="radio"]:checked + label:before,
+			[type="radio"]:not(:checked) + label:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 18px;
+				height: 18px;
+				border: 1px solid #ddd;
+				border-radius: 100%;
+				background: #fff;
+			}
+			[type="radio"]:checked + label:after,
+			[type="radio"]:not(:checked) + label:after {
+				content: "";
+				width: 12px;
+				height: 12px;
+				background: #f87da9;
+				position: absolute;
+				top: 4px;
+				left: 4px;
+				border-radius: 100%;
+				-webkit-transition: all 0.2s ease;
+				transition: all 0.2s ease;
+			}
+			[type="radio"]:not(:checked) + label:after {
+				opacity: 0;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+			}
+			[type="radio"]:checked + label:after {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		</style>
+		<!--  Custom radio button -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀Header sticky animation  -->
 		<style>
 			.site-header.sticky-header {
@@ -125,10 +250,12 @@
 				top: 0;
 				-webkit-animation: bar 1s ease;
 			}
+
 			@keyframes bar {
 				0% {
 					top: -100px;
 				}
+
 				100% {
 					top: 0%;
 				}
@@ -157,6 +284,7 @@
 			.owl-next {
 				position: absolute;
 			}
+
 			.owl-prev {
 				left: -60px;
 				top: 50%;
@@ -165,6 +293,7 @@
 				background-color: transparent !important;
 				outline: none !important;
 			}
+
 			.owl-next {
 				right: -60px;
 				top: 50%;
@@ -205,6 +334,7 @@
 				transform: scale(0.8);
 				transform-origin: 0 0;
 			}
+
 			.wpcf7 .recaptcha .g-recaptcha > div {
 				width: 310px !important;
 				height: 62px !important;
@@ -217,6 +347,7 @@
 			.overlay-plus {
 				position: relative;
 			}
+
 			.overlay-plus::before,
 			.overlay-plus::after {
 				top: 0;
@@ -224,12 +355,15 @@
 				left: 0;
 				right: 0;
 			}
+
 			.overlay-plus:not(:hover)::before {
 				width: 0;
 			}
+
 			.overlay-plus:not(:hover)::after {
 				height: 0;
 			}
+
 			.overlay-plus::before,
 			.overlay-plus::after {
 				content: "";
@@ -256,6 +390,7 @@
 				font-size: 14px;
 				position: relative;
 			}
+
 			label.error:after {
 				content: "";
 				margin: 0 0.5em;
@@ -276,6 +411,7 @@
 			.MainDIV {
 				position: relative;
 			}
+
 			.MainDIV video,
 			.MainDIV iframe {
 				width: 100vw;
@@ -367,12 +503,24 @@
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
 		<!-- 😀 Owl Carousel padding on first item with (Stage padding) -->
 		<div class="owl-carousel">
-			<div class="item"><h4>1</h4></div>
-			<div class="item"><h4>2</h4></div>
-			<div class="item"><h4>3</h4></div>
-			<div class="item"><h4>4</h4></div>
-			<div class="item"><h4>5</h4></div>
-			<div class="item"><h4>6</h4></div>
+			<div class="item">
+				<h4>1</h4>
+			</div>
+			<div class="item">
+				<h4>2</h4>
+			</div>
+			<div class="item">
+				<h4>3</h4>
+			</div>
+			<div class="item">
+				<h4>4</h4>
+			</div>
+			<div class="item">
+				<h4>5</h4>
+			</div>
+			<div class="item">
+				<h4>6</h4>
+			</div>
 		</div>
 		<script>
 			$(".owl-carousel").owlCarousel({
@@ -388,6 +536,7 @@
 			.owl-stage {
 				right: -40px;
 			}
+
 			/* or start in left use this code simple */
 			.owl-stage {
 				left: -40px;
