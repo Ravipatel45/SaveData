@@ -8,6 +8,33 @@
 	</head>
 
 	<body>
+		<!-- 😀 className  -->
+		<style>
+			.banner-title {
+				font-size: 100px;
+			} /*banner title classname*/
+			.banner-subtitle {
+				font-size: 50px;
+			} /*banner sub title classname*/
+			.title {
+				font-size: 80px;
+			} /* section title*/
+			.subtitle {
+				font-size: 40px;
+			} /* section sub title classname*/
+			.sec-pad {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			} /*section spacing classname*/
+			.sec-container {
+				max-width: 1200px;
+				width: 100%;
+				margin: 0 auto;
+			} /* section contaioner classname */
+		</style>
+		<!-- className  -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Css3 variable -->
 		<style>
 			:root {
@@ -27,7 +54,8 @@
 		</style>
 		<!-- Css3 variable -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
-		<!-- 😀 scrollbar css -->
+
+		<!-- 😀 change scrollbar color & width css -->
 		<style>
 			:root {
 				scrollbar-color: #ff7300 #000 !important;
@@ -50,12 +78,34 @@
 				background-color: #ff7300;
 			}
 		</style>
-		<!-- scrollbar css -->
+		<!-- change scrollbar color & width css -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
+		<!-- 😀 Hide scrollbar, but while still being able to scroll -->
+		<style>
+			.ClassName {
+				overflow-y: scroll;
+				scrollbar-width: none; /* Firefox */
+				-ms-overflow-style: none; /* Internet Explorer 10+ */
+			}
+			.ClassName::-webkit-scrollbar {
+				/* WebKit */
+				width: 0;
+				height: 0;
+			}
+			/* Hide scrollbar for Chrome, Safari and Opera */
+			.ClassName::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+		<!-- Hide scrollbar, but while still being able to scroll -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 CSS-Grid-Layout https://codepen.io/lcolsant/pen/yLypWaB -->
 		<a href="https://codepen.io/lcolsant/pen/yLypWaB">Link</a>
 		<!-- CSS-Grid-Layout -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Grid css & HTML -->
 		<section>
 			<ul class="grid-wrapper">
@@ -86,6 +136,7 @@
 		</style>
 		<!-- Grid css & HTML-->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 masonry layout css & HTML -->
 		<section>
 			<ul class="grid-wrapper">
@@ -123,7 +174,22 @@
 		</style>
 		<!-- masonry layout css & HTML -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Custom Checkbox -->
+		<form>
+			<div class="form-group">
+				<input type="checkbox" id="html" />
+				<label for="html">HTML</label>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" id="css" />
+				<label for="css">CSS</label>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" id="javascript" />
+				<label for="javascript">Javascript</label>
+			</div>
+		</form>
 		<style>
 			.form-group {
 				display: block;
@@ -174,6 +240,7 @@
 		</style>
 		<!--  Custom Checkbox -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!--  😀Custom radio button -->
 		<form action="#">
 			<p>
@@ -242,6 +309,7 @@
 		</style>
 		<!--  Custom radio button -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀Header sticky animation  -->
 		<style>
 			.site-header.sticky-header {
@@ -263,6 +331,7 @@
 		</style>
 		<!-- Header sticky animation  -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Full screen & div container css -->
 		<style>
 			/* 1400px is your container size */
@@ -277,6 +346,7 @@
 		</style>
 		<!-- Full screen & div container css -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Owl Carousel 2 Navigation on Sides - Left and Right https://codepen.io/ramsh/pen/xxbaRdQ -->
 		<a href="https://codepen.io/ramsh/pen/xxbaRdQ"></a>
 		<style>
@@ -305,6 +375,7 @@
 		</style>
 		<!-- Owl Carousel 2 Navigation on Sides - Left and Right  -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 slider full width only one side container  -->
 		<style>
 			/* 1540px is your container width */
@@ -316,6 +387,7 @@
 		</style>
 		<!-- slider full width only one side container  -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Form select box css -->
 		<style>
 			select {
@@ -324,10 +396,14 @@
 				background-position: right 25px top 50%;
 				background-size: 17px;
 				cursor: pointer;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
 			}
 		</style>
 		<!-- Form select box css -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 contact fomt g-recaptcha css -->
 		<style>
 			.wpcf7 .wpcf7-recaptcha iframe {
@@ -382,6 +458,7 @@
 		</style>
 		<!-- image hover animation -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Form error msg design -->
 		<style>
 			label.error {
@@ -406,6 +483,7 @@
 		</style>
 		<!-- Form error msg design -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Video full screen css -->
 		<style>
 			.MainDIV {
@@ -426,7 +504,9 @@
 		</style>
 		<!-- Video full screen css -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 sticky sidebar js -->
+		<!-- link : https://codepen.io/pouretrebelle/pen/kPgKpn -->
 		<script>
 			jQuery(window).on("load", function () {
 				setTimeout(function () {
@@ -461,6 +541,7 @@
 		</script>
 		<!-- sticky sidebar js -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Equal Height js -->
 		<script>
 			jQuery(document).ready(function () {
@@ -501,6 +582,7 @@
 		</script>
 		<!-- Equal Height js -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+
 		<!-- 😀 Owl Carousel padding on first item with (Stage padding) -->
 		<div class="owl-carousel">
 			<div class="item">
