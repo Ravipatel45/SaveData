@@ -739,6 +739,24 @@
 		</script>
 		<!-- Equal Height js -->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
+		
+		<!-- 😀 Smooth Scroll with Offset jQuery -->
+		<script>
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+					e.preventDefault();
+					var target = this.hash;
+					var $target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top-80
+					}, 900, 'swing', function () {
+						// window.location.hash = target;
+					});
+				});
+			});
+		</script>
+		<!-- Smooth Scroll with Offset jQuery -->
+		<!----------------------------------------------------------- End ----------------------------------------------------------->
 
 		<!-- 😀 Owl Carousel padding on first item with (Stage padding) -->
 		<div class="owl-carousel">
