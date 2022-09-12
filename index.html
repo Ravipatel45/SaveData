@@ -148,6 +148,29 @@
 				justify-content: center;
 			}
 		</style>
+
+		<!-- --------------------------------- -->
+		<style>
+		.mainClass {
+			display: grid;
+			grid-gap: 5px;
+			grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+			grid-auto-rows: 20%;
+			grid-auto-flow: dense;
+		}
+		.mainClass .item:first-child, {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.mainClass .item {
+			width: initial;
+			margin-right: 0px;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			float: none;
+			padding: 0 5px;
+		}
+		</style>
 		<!-- Grid css & HTML-->
 		<!----------------------------------------------------------- End ----------------------------------------------------------->
 
